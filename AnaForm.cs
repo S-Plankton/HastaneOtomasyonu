@@ -25,7 +25,7 @@ namespace HastaneOtomasyonu
 
         private void düzenleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HstDuzenleForm kayit = new HstDuzenleForm();
+            HastaDuzenleForm kayit = new HastaDuzenleForm();
             kayit.Show();
         }
 
@@ -37,7 +37,49 @@ namespace HastaneOtomasyonu
 
         private void randevuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            RandevuForm kayit = new RandevuForm();
+            kayit.Show();
+        }
+
+        private void faturaVeÖdemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FaturalarForm kayit = new FaturalarForm();
+            kayit.Show();
+        }
+
+        private void yatakYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            YatakYonetimForm kayit = new YatakYonetimForm();
+            kayit.Show();
+        }
+
+        private void ameliyatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AmeliyatForm kayit = new AmeliyatForm();
+            kayit.Show();
+        }
+
+        private void doktorEkranıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TedaviForm kayit = new TedaviForm();
+            kayit.Show();
+        }
+
+        private void labaratuvarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LaboratuvarForm kayit = new LaboratuvarForm();
+            kayit.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text=DateTime.Now.ToLongDateString();
+            label2.Text=DateTime.Now.ToLongTimeString();
+        }
+
+        private void hastalarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

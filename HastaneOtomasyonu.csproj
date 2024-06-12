@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmeliyatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AmeliyatForm.Designer.cs">
+      <DependentUpon>AmeliyatForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +64,23 @@
     <Compile Include="DoktorForm.Designer.cs">
       <DependentUpon>DoktorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FaturalarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FaturalarForm.Designer.cs">
+      <DependentUpon>FaturalarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastakayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastakayitForm.Designer.cs">
+      <DependentUpon>HastakayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaDuzenleForm.Designer.cs">
+      <DependentUpon>HastaDuzenleForm.cs</DependentUpon>
     </Compile>
     <Compile Include="HastaneOtomasyonuDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -74,35 +92,88 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HastaneOtomasyonuDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="HastaneOtomasyonuDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonuDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonuDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonuDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonuDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonuDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonuDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonuDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HastaSilGuncelleForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HastaSilGuncelleForm.Designer.cs">
       <DependentUpon>HastaSilGuncelleForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="HstDuzenleForm.cs">
+    <Compile Include="LaboratuvarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HstDuzenleForm.Designer.cs">
-      <DependentUpon>HstDuzenleForm.cs</DependentUpon>
+    <Compile Include="LaboratuvarForm.Designer.cs">
+      <DependentUpon>LaboratuvarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandevuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RandevuForm.Designer.cs">
+      <DependentUpon>RandevuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteForm.Designer.cs">
+      <DependentUpon>ReceteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlBaglantim.cs" />
+    <Compile Include="TedaviForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedaviForm.Designer.cs">
+      <DependentUpon>TedaviForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YatakYonetimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YatakYonetimForm.Designer.cs">
+      <DependentUpon>YatakYonetimForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AmeliyatForm.resx">
+      <DependentUpon>AmeliyatForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoktorForm.resx">
       <DependentUpon>DoktorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FaturalarForm.resx">
+      <DependentUpon>FaturalarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastakayitForm.resx">
+      <DependentUpon>HastakayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaDuzenleForm.resx">
+      <DependentUpon>HastaDuzenleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HastaSilGuncelleForm.resx">
       <DependentUpon>HastaSilGuncelleForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HstDuzenleForm.resx">
-      <DependentUpon>HstDuzenleForm.cs</DependentUpon>
+    <EmbeddedResource Include="LaboratuvarForm.resx">
+      <DependentUpon>LaboratuvarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -113,6 +184,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RandevuForm.resx">
+      <DependentUpon>RandevuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceteForm.resx">
+      <DependentUpon>ReceteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedaviForm.resx">
+      <DependentUpon>TedaviForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YatakYonetimForm.resx">
+      <DependentUpon>YatakYonetimForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="HastaneOtomasyonuDataSet.xsc">
       <DependentUpon>HastaneOtomasyonuDataSet.xsd</DependentUpon>
     </None>
@@ -134,6 +217,50 @@
     </None>
     <None Include="HastaneOtomasyonuDataSet1.xss">
       <DependentUpon>HastaneOtomasyonuDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet2.xsc">
+      <DependentUpon>HastaneOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonuDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet2.xss">
+      <DependentUpon>HastaneOtomasyonuDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet3.xsc">
+      <DependentUpon>HastaneOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonuDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet3.xss">
+      <DependentUpon>HastaneOtomasyonuDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet4.xsc">
+      <DependentUpon>HastaneOtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonuDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet4.xss">
+      <DependentUpon>HastaneOtomasyonuDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet5.xsc">
+      <DependentUpon>HastaneOtomasyonuDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonuDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonuDataSet5.xss">
+      <DependentUpon>HastaneOtomasyonuDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

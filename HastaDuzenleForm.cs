@@ -10,25 +10,24 @@ using System.Windows.Forms;
 
 namespace HastaneOtomasyonu
 {
-    public partial class HstDuzenleForm : Form
+    public partial class HastaDuzenleForm : Form
     {
-        public HstDuzenleForm()
+        public HastaDuzenleForm()
         {
             InitializeComponent();
         }
-        private void HstDuzenleForm_Load(object sender, EventArgs e)
+
+        private void HastaDuzenleForm_Load(object sender, EventArgs e)
         {
-            // TODO: Bu kod satırı 'hastaneOtomasyonuDataSet.Hasta' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.hastaTableAdapter.Fill(this.hastaneOtomasyonuDataSet.Hasta);
+            // TODO: Bu kod satırı 'hastaneOtomasyonuDataSet5.Hasta' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.hastaTableAdapter.Fill(this.hastaneOtomasyonuDataSet5.Hasta);
 
         }
         public int secilen;
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            secilen = dataGridView1.SelectedCells[0].RowIndex;
             HastaSilGuncelleForm fr = new HastaSilGuncelleForm();
-
+            secilen = dataGridView1.SelectedCells[0].RowIndex;
             fr.id = dataGridView1.Rows[secilen].Cells[0].Value.ToString();
             fr.ad = dataGridView1.Rows[secilen].Cells[1].Value.ToString();
             fr.soyad = dataGridView1.Rows[secilen].Cells[2].Value.ToString();
@@ -45,7 +44,5 @@ namespace HastaneOtomasyonu
             fr.Show();
 
         }
-
-        
     }
 }

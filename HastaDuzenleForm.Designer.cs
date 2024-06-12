@@ -1,6 +1,6 @@
 ﻿namespace HastaneOtomasyonu
 {
-    partial class HstDuzenleForm
+    partial class HastaDuzenleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HastaDuzenleForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.hastaneOtomasyonuDataSet = new HastaneOtomasyonu.HastaneOtomasyonuDataSet();
+            this.hastaneOtomasyonuDataSet5 = new HastaneOtomasyonu.HastaneOtomasyonuDataSet5();
             this.hastaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hastaTableAdapter = new HastaneOtomasyonu.HastaneOtomasyonuDataSetTableAdapters.HastaTableAdapter();
+            this.hastaTableAdapter = new HastaneOtomasyonu.HastaneOtomasyonuDataSet5TableAdapters.HastaTableAdapter();
             this.hastaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hstAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hstSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +48,7 @@
             this.hstVekaletDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hstVekaletTelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hastaneOtomasyonuDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneOtomasyonuDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hastaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,19 +74,19 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(800, 450);
+            this.dataGridView1.Size = new System.Drawing.Size(763, 457);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // hastaneOtomasyonuDataSet
+            // hastaneOtomasyonuDataSet5
             // 
-            this.hastaneOtomasyonuDataSet.DataSetName = "HastaneOtomasyonuDataSet";
-            this.hastaneOtomasyonuDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.hastaneOtomasyonuDataSet5.DataSetName = "HastaneOtomasyonuDataSet5";
+            this.hastaneOtomasyonuDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // hastaBindingSource
             // 
             this.hastaBindingSource.DataMember = "Hasta";
-            this.hastaBindingSource.DataSource = this.hastaneOtomasyonuDataSet;
+            this.hastaBindingSource.DataSource = this.hastaneOtomasyonuDataSet5;
             // 
             // hastaTableAdapter
             // 
@@ -170,17 +171,21 @@
             this.hstVekaletTelefonDataGridViewTextBoxColumn.HeaderText = "HstVekaletTelefon";
             this.hstVekaletTelefonDataGridViewTextBoxColumn.Name = "hstVekaletTelefonDataGridViewTextBoxColumn";
             // 
-            // HstDuzenleForm
+            // HastaDuzenleForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(763, 457);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "HstDuzenleForm";
-            this.Text = "HstDuzenleForm";
-            this.Load += new System.EventHandler(this.HstDuzenleForm_Load);
+            this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "HastaDuzenleForm";
+            this.Text = "HastaDuzenleForm";
+            this.Load += new System.EventHandler(this.HastaDuzenleForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hastaneOtomasyonuDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneOtomasyonuDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hastaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -189,9 +194,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private HastaneOtomasyonuDataSet hastaneOtomasyonuDataSet;
+        private HastaneOtomasyonuDataSet5 hastaneOtomasyonuDataSet5;
         private System.Windows.Forms.BindingSource hastaBindingSource;
-        private HastaneOtomasyonuDataSetTableAdapters.HastaTableAdapter hastaTableAdapter;
+        private HastaneOtomasyonuDataSet5TableAdapters.HastaTableAdapter hastaTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn hastaidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hstAdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hstSoyadDataGridViewTextBoxColumn;
